@@ -19,3 +19,4 @@ stylus样式穿透
     },
 
 使用better-scroll的scroll.scrollToElement(element)方法可以跳转到某个元素
+列表跳转可以加一个函数节流
