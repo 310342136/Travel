@@ -20,3 +20,10 @@ stylus样式穿透
 
 使用better-scroll的scroll.scrollToElement(element)方法可以跳转到某个元素
 列表跳转可以加一个函数节流
+
+router-link会渲染成一个a标签，导致我的样式发生改变，可以使用
+<router-link tag='tagName'>解决
+
+scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }可以解决一个组件拖动影响另一个组件，意思是每一次进入新的页面时让xy为0
